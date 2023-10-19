@@ -1,0 +1,24 @@
+{
+  "name": "yes",
+  "version": "1.0.0",
+  "description": "clockworkLogs+JIRA",
+  "main": "index.js",
+  "scripts": {},
+  "author": "KokhanSI",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.7.23",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-fetch": "^3.1.5",
+    "express": "^4.18.2",
+    "jira-connector": "^3.1.0",
+    "jira.js": "^2.16.1",
+    "node-fetch": "^2.6.7",
+    "node-telegram-bot-api": "^0.61.0"
+  },
+  "type": "module"
+}
