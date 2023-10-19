@@ -1,9 +1,13 @@
 {
   "name": "yes",
   "version": "1.0.0",
-  "description": "clockworkLogs+JIRA",
+  "description": "Search",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "api-tests-production": "newman run postman_collection.json -d test.csv",
+    "php_URLencode": "php -f URLencode.php"
+  },
   "author": "KokhanSI",
   "license": "ISC",
   "devDependencies": {

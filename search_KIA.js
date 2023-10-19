@@ -139,7 +139,7 @@ async function ParseJSON(fileName, message) {
             console.log(status)
  
         //============       
-            // if(status==true){
+            if(status==true){
                 listMessages= JSON.stringify(listMessages);
                 // console.log(listMessages);
 
@@ -152,7 +152,7 @@ async function ParseJSON(fileName, message) {
                 // console.log(urlGroups)
                 sleep(1000)
                 sendTelegramMessage(listMessages, fileName, message)
-            // }
+            }
 
 
 
