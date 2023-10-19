@@ -102,7 +102,7 @@ async function ParseJSON(fileName, message) {
 
             carIdArray[i]=idcar;
 
-            listMessages[i]="_https://shop.aldcarmarket.com/de-de/car/kia/niro/"+version+"/"+idcar+"?financetype="+financetype+"&quoteId="+idFinance+" _"+make+" "+model+" "+year+"_Mileage : "+mileage+"_ID : "+reference+"_Price : "+price+" EUR_ID";
+            listMessages[i]="_https://shop.aldcarmarket.com/de-de/car/kia/niro/"+version+"/"+idcar+"?financetype="+financetype+"&quoteId="+idFinance+" _"+make+" "+model+" "+year+"_Mileage : "+mileage+"_ID : "+reference+"_Price : "+price+" EUR_";
         }
 
         // console.log(listMessages);
@@ -139,7 +139,7 @@ async function ParseJSON(fileName, message) {
             console.log(status)
  
         //============       
-            if(status==true){
+            // if(status==true){
                 listMessages= JSON.stringify(listMessages);
                 // console.log(listMessages);
 
@@ -152,7 +152,7 @@ async function ParseJSON(fileName, message) {
                 // console.log(urlGroups)
                 sleep(1000)
                 sendTelegramMessage(listMessages, fileName, message)
-            }
+            // }
 
 
 
@@ -235,7 +235,7 @@ let responseObj;
     }
 
   
-    await clockworkLogs(KIA, fileName3, "😱😱😱  A new car has appeared  😱😱😱");
+    await clockworkLogs(KIA, fileName3, "😱😱😱  A new car has appeared  😱😱😱_@kokhanat_@KokhanS_");
 })();
 //=========
 
