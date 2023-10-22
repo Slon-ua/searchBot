@@ -27,8 +27,10 @@ pipeline {
             }
         }
         stage('Run script'){
-            steps {   
-                sh 'node search_KIA.js'
+            steps {                      
+                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+                    sh 'node search_KIA.js'                
+                }
             }
         }
     }
