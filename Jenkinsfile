@@ -5,9 +5,10 @@ pipeline {
         }
         
     }
+    agent any
     // agent {
     //     node {
-    //         label 'master'
+    //         label 'main'
     //     }
     // }
     stages {
