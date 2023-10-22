@@ -12,7 +12,7 @@ pipeline {
     // }
     stages {
         stage('Preparation') {
-            agent none
+            //agent none
             steps {
                 // cleanWs()
                 // dir("./") {
@@ -25,7 +25,7 @@ pipeline {
                 sh 'npm install --save cross-fetch'
             }
         }
-        stage('Run Clockwork Log script'){
+        stage('Run script'){
             steps {   
                 sh 'node search_KIA.js'
             }
