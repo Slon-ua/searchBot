@@ -1,7 +1,7 @@
 pipeline {
     post {
         always {
-            archiveArtifacts artifacts: '*.json','KIA__Niro','KIA__Niro2'
+            archiveArtifacts artifacts: '*.json, KIA__Niro, KIA__Niro2'
         }
         
     }
