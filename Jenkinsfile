@@ -5,11 +5,11 @@ pipeline {
         }
         
     }
-    agent {
-        node {
-            label 'master'
-        }
-    }
+    // agent {
+    //     node {
+    //         label 'master'
+    //     }
+    // }
     stages {
         stage('Preparation') {
             agent none
