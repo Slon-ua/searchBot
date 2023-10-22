@@ -21,6 +21,8 @@ pipeline {
                 // }
                 sh 'ls -la'
                 sh 'pwd'
+                sh "sudo apt install nodejs"
+                sh "sudo apt install npm"
                 sh 'npm install'
                 sh 'npm i node-telegram-bot-api'
                 sh 'npm install --save cross-fetch'
