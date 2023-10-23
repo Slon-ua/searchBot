@@ -24,7 +24,7 @@ pipeline {
                 sh 'ls -la'
                 sh 'ls -la ~'                
                 sh 'ls -la ~/jobs/'
-                sh 'ls -la ~/jobs/Search KIA/'
+                sh 'ls -la ~/jobs/Search%20KIA/'
                 sh 'ls -la ~/logs/'
                 // sh 'ls -la ../'
                 // sh 'ls -la ../../'
