@@ -25,6 +25,7 @@ pipeline {
                 // sh 'ls -la ~'                
                 // sh 'ls -la ~/jobs/'
                 sh 'ls -la ~/jobs/Search_KIA/builds/${BUILD_NUMBER}/'
+                sh 'ls -la ~/jobs/Search_KIA/builds/${BUILD_NUMBER}/workflow/'
                 sh 'ls -la ~/jobs/Search_KIA/builds/${BUILD_NUMBER}/execution/node/3/ws/'
                 sh 'pwd'
                 sh 'npm install'
