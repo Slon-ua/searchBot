@@ -11,6 +11,11 @@ pipeline {
     //         label 'main'
     //     }
     // }
+    parameters {
+        string(name: 'BUILD', defaultValue: '${BUILD_NUMBER}', description: 'Short description what is going to be changed')
+        string(name: 'BUILD2', defaultValue: '${BUILD_NUMBER}-1', description: 'Short description what is going to be changed')
+        
+    }
     stages {
         stage('Preparation') {
             //agent none
@@ -31,13 +36,8 @@ pipeline {
                 
                 // sh 'ls -la ~/jobs/Search_KIA/builds/'+$BUILD_NUMBER-1+'/'
                 // sh 'ls -la ~/logs/'
-                sh 'echo "#${BUILD_NUMBER}"'
-                
-                sh 'echo "#${BUILD_NUMBER}-1"'
-                sh 'echo #'+${BUILD_NUMBER-1}
-                sh 'echo #'+BUILD_NUMBER-1
-                sh 'echo '+BUILD_NUMBER-1
-                sh BUILD_NUMBER-1
+                sh 'echo "#${BUILD}"'                
+                sh 'echo "#${BUILD2}"'
                 // sh 'ls -la ../'
                 // sh 'ls -la ../../'
                 // sh 'ls -la ../../../'
