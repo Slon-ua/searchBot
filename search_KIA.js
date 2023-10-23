@@ -9,6 +9,12 @@ import fs from 'fs';
 
 const fileName3 = "KIA__Niro"; //--
 
+
+let BUILD_NUMBER = process.argv[2];
+BUILD_NUMBER= Number(BUILD_NUMBER)-1;
+console.log('BUILD_NUMBER = '+BUILD_NUMBER);
+console.log('BUILD_NUMBER 2 = '+process.argv[2]);
+
 const KIA = "https://api.aldautomotive.com/rms/carmarket/b2c/vehicleads?facets=mileage,price,modelYear,firstRegistrationYear,makeAndModel,fuelType,gearbox,bodyType,location,mainColor,term,financeMode,seat,isCommercial&makes=KIA%2CHYUNDAI&Models=NIRO&orderBy=makeAndModel&orderDirection=asc"; //--
 
 
@@ -111,7 +117,8 @@ async function ParseJSON(fileName, message) {
         // console.log(`====================================== 2 ======================================`);  
 
         let status = false;
-        fs.readFile(fileName+2, (err, data) => {
+        // fs.readFile(fileName+2, (err, data) => {
+        fs.readFile('../../../../../'+BUILD_NUMBER+'/execution/node/3/ws/'+fileName+2, (err, data) => {
             if (err) throw err;
             const carArray = JSON.parse(data);
 
