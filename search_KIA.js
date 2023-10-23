@@ -121,6 +121,7 @@ async function ParseJSON(fileName, message) {
         fs.readFile('/var/jenkins_home/jobs/Search_KIA/builds/'+BUILD_NUMBER+'/archive/'+fileName+2, (err, data) => {
             if (err) throw err;
             const carArray = JSON.parse(data);
+            console.log(fileName+2+" = "+carArray)
 
             for(let j=0; j<dataArray.items.length; j++){
                 for(let i=0; i<carArray.length; i++){
