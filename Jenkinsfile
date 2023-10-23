@@ -12,9 +12,7 @@ pipeline {
     //     }
     // }
     parameters {
-        string(name: 'BUILD', defaultValue: '${BUILD_NUMBER}', description: 'Short description what is going to be changed')
-        string(name: 'BUILD2', defaultValue: '${BUILD_NUMBER}-1', description: 'Short description what is going to be changed')
-        
+        // string(name: 'BUILD', defaultValue: '${BUILD_NUMBER}', description: 'Short description what is going to be changed')   
     }
     stages {
         stage('Preparation') {
@@ -29,21 +27,8 @@ pipeline {
                 sh 'ls -la'
                 // sh 'ls -la ~'                
                 // sh 'ls -la ~/jobs/'
-                // sh 'ls -la ~/jobs/Search_KIA/builds/'
-                // sh 'ls -la ~/jobs/Search_KIA/builds/${BUILD_NUMBER}/'
-                
-                // sh 'ls -la ~/jobs/Search_KIA/builds/'+BUILD_NUMBER-1+'/'
-                
-                // sh 'ls -la ~/jobs/Search_KIA/builds/'+$BUILD_NUMBER-1+'/'
-                // sh 'ls -la ~/logs/'
-                sh 'echo "#1 $BUILD"'                
-                sh 'echo "#2 $BUILD2"'
-                // sh 'ls -la ../'
-                // sh 'ls -la ../../'
-                // sh 'ls -la ../../../'
-                // sh 'ls -la ../../../../'
-                // sh 'ls -la ../../../../../'
-                sh 'ls -la /187/execution/node/3/ws/KIA__Niro2/'
+                sh 'ls -la ~/jobs/Search_KIA/builds/${BUILD_NUMBER}/'
+                sh 'ls -la ~/jobs/Search_KIA/builds/${BUILD_NUMBER}/execution/node/3/ws/'
                 sh 'pwd'
                 sh 'npm install'
                 sh 'npm i node-telegram-bot-api'
