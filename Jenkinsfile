@@ -20,6 +20,13 @@ pipeline {
                 //     git branch: 'main', url: 'git@github.com:driveroo/ClockworkLogs.git', credentialsId: 'Jenkins-GitHub-SSH-Key'
                 // }
                 sh 'ls -la'
+
+                sh 'ls -la''../'
+                sh 'ls -la''../../'
+                sh 'ls -la''../../../'
+                sh 'ls -la''../../../../'
+                sh 'ls -la''../../../../../'
+                sh 'ls -la''../../../../../${BUILD_NUMBER}/execution/node/3/ws/'
                 sh 'pwd'
                 sh 'npm install'
                 sh 'npm i node-telegram-bot-api'
