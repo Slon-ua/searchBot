@@ -29,7 +29,7 @@ pipeline {
         stage('Run script'){
             steps {                      
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    sh 'node search_KIA.js'+$BUILD_NUMBER                
+                    sh 'node search_KIA.js'+${BUILD_NUMBER}                
                 }
             }
         }
