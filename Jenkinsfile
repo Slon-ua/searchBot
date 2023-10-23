@@ -36,6 +36,8 @@ pipeline {
                 sh 'echo "#${BUILD_NUMBER}-1"'
                 sh 'echo #'+${BUILD_NUMBER}-1
                 sh 'echo #'+BUILD_NUMBER-1
+                sh 'echo '+BUILD_NUMBER-1
+                sh BUILD_NUMBER-1
                 // sh 'ls -la ../'
                 // sh 'ls -la ../../'
                 // sh 'ls -la ../../../'
