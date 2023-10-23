@@ -36,8 +36,8 @@ pipeline {
                 
                 // sh 'ls -la ~/jobs/Search_KIA/builds/'+$BUILD_NUMBER-1+'/'
                 // sh 'ls -la ~/logs/'
-                sh 'echo "#${BUILD}"'                
-                sh 'echo "#${BUILD2}"'
+                sh 'echo "#1 $BUILD"'                
+                sh 'echo "#2 $BUILD2"'
                 // sh 'ls -la ../'
                 // sh 'ls -la ../../'
                 // sh 'ls -la ../../../'
