@@ -118,7 +118,7 @@ async function ParseJSON(fileName, message) {
 
         let status = false;
         // fs.readFile(fileName+2, (err, data) => {
-        fs.readFile('~/jobs/Search_KIA/builds/'+BUILD_NUMBER+'/execution/node/3/ws/'+fileName+2, (err, data) => {
+        fs.readFile('~/jobs/Search_KIA/builds/'+BUILD_NUMBER+'/archive/'+fileName+2, (err, data) => {
             if (err) throw err;
             const carArray = JSON.parse(data);
 
