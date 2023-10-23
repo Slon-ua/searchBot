@@ -21,12 +21,12 @@ pipeline {
                 // }
                 sh 'ls -la'
 
-                sh 'ls -la''../'
-                sh 'ls -la''../../'
-                sh 'ls -la''../../../'
-                sh 'ls -la''../../../../'
-                sh 'ls -la''../../../../../'
-                sh 'ls -la''../../../../../${BUILD_NUMBER}/execution/node/3/ws/'
+                sh 'ls -la ../'
+                sh 'ls -la ../../'
+                sh 'ls -la ../../../'
+                sh 'ls -la ../../../../'
+                sh 'ls -la ../../../../../'
+                sh 'ls -la ../../../../../${BUILD_NUMBER}/execution/node/3/ws/'
                 sh 'pwd'
                 sh 'npm install'
                 sh 'npm i node-telegram-bot-api'
