@@ -22,7 +22,8 @@ pipeline {
 
                 sh 'pwd'
                 sh 'ls -la'
-                sh 'ls -la ~'
+                sh 'ls -la ~'                
+                sh 'ls -la ~/jobs/'
                 sh 'ls -la ~/jobs/Search KIA/'
                 sh 'ls -la ~/logs/'
                 // sh 'ls -la ../'
