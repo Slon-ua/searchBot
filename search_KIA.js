@@ -88,6 +88,7 @@ async function ParseJSON(fileName, message) {
         let mileage; 
         let price; 
         let reference; 
+        let isReserved;
 
         for(let i=0; i<dataArray.items.length; i++){
 
@@ -104,11 +105,12 @@ async function ParseJSON(fileName, message) {
             year = dataArray.items[i].firstRegistrationYear;
             mileage = dataArray.items[i].mileageValue;
             price = dataArray.items[i].financeData[0].price;
+            isReserved = dataArray.items[i].isReserved;
             
 
             carIdArray[i]=idcar;
 
-            listMessages[i]="_https://shop.aldcarmarket.com/de-de/car/kia/niro/"+version+"/"+idcar+"?financetype="+financetype+"&quoteId="+idFinance+" _"+make+" "+model+" "+year+"_Mileage : "+mileage+"_ID : "+reference+"_Price : "+price+" EUR_";
+            listMessages[i]="_https://shop.aldcarmarket.com/de-de/car/kia/niro/"+version+"/"+idcar+"?financetype="+financetype+"&quoteId="+idFinance+" _"+make+" "+model+" "+year+"_Mileage : "+mileage+"_ID : "+reference+"_Is Reserved : "+isReserved+"_Price : "+price+" EUR_";
         }
 
         // console.log(listMessages);
