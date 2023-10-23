@@ -24,10 +24,18 @@ pipeline {
                 sh 'ls -la'
                 // sh 'ls -la ~'                
                 // sh 'ls -la ~/jobs/'
-                sh 'ls -la ~/jobs/Search_KIA/builds/'
-                sh 'ls -la ~/jobs/Search_KIA/builds/${BUILD_NUMBER}/'
+                // sh 'ls -la ~/jobs/Search_KIA/builds/'
+                // sh 'ls -la ~/jobs/Search_KIA/builds/${BUILD_NUMBER}/'
+                
+                // sh 'ls -la ~/jobs/Search_KIA/builds/'+BUILD_NUMBER-1+'/'
+                
+                // sh 'ls -la ~/jobs/Search_KIA/builds/'+$BUILD_NUMBER-1+'/'
                 // sh 'ls -la ~/logs/'
                 sh 'echo "#${BUILD_NUMBER}"'
+                
+                sh 'echo "#${BUILD_NUMBER}-1"'
+                sh 'echo #'+${BUILD_NUMBER}-1
+                sh 'echo #'+BUILD_NUMBER-1
                 // sh 'ls -la ../'
                 // sh 'ls -la ../../'
                 // sh 'ls -la ../../../'
