@@ -11,9 +11,6 @@ pipeline {
     //         label 'main'
     //     }
     // }
-    parameters {
-        // string(name: 'BUILD', defaultValue: '${BUILD_NUMBER}', description: 'Short description what is going to be changed')   
-    }
     stages {
         stage('Preparation') {
             //agent none
