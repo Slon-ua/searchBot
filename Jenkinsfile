@@ -26,7 +26,7 @@ pipeline {
                 // sh 'ls -la ~/jobs/'
                 // sh 'ls -la ~/jobs/Search_KIA/builds/${BUILD_NUMBER}/'
                 sh 'ls -la ~/jobs/Search_KIA/builds/${BUILD_NUMBER}/archive/'
-                sh 'ls -la var/jenkins_home/jobs/Search_KIA/builds/${BUILD_NUMBER}/archive/'
+                sh 'ls -la /var/jenkins_home/jobs/Search_KIA/builds/${BUILD_NUMBER}/archive/'
                 sh 'pwd'
                 sh 'npm install'
                 sh 'npm i node-telegram-bot-api'
