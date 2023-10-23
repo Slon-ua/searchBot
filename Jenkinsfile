@@ -34,7 +34,7 @@ pipeline {
                 sh 'echo "#${BUILD_NUMBER}"'
                 
                 sh 'echo "#${BUILD_NUMBER}-1"'
-                sh 'echo #'+${BUILD_NUMBER}-1
+                sh 'echo #'+${BUILD_NUMBER-1}
                 sh 'echo #'+BUILD_NUMBER-1
                 sh 'echo '+BUILD_NUMBER-1
                 sh BUILD_NUMBER-1
